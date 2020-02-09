@@ -1,0 +1,98 @@
+1.7
+ # Created an explosions array allowing for up to 15 on-screen explosions
+ # Added controls the to html code
+ # Added an explosion calculation method to handle the drawing of explosions
+ # Organized the code by creating large headers for important sections
+ # Implemented new blue color for player two
+ # Implemented shading for player ships based on health
+ # Revised GUI
+ # Added a random star generator method and class
+ # Implemented a scrolling method for the background stars
+ # Implemented new destroyer graphics
+ # Moved destroyers slightly farther back from the playing field
+
+1.8.2
+ # Replaced sentries with placeable turrets (similar to ones on base, etc)
+ # Implemented respawn cooldown for ships and destroyers
+ # Modified explosion objects to take a radius argument
+ # Swapped control colors in the .html
+ # Cleaned up Asteroids.java and Ship.java
+
+1.8.3
+ # Fixed turretTargetBlue()
+ # Added a constructer argument to set turret accuracy
+ # Fixed long-ranged turrets' shots dissapearing too quickly
+ # Added a version number display to avoid confusion
+
+1.8.4
+ # Turrets shoot at turretsRed[4] and turretsBlue[4]
+ # Added shotLife argument
+ # Temporarly fix for destroyer respawn
+ # Bug: Shooting when you respawn needs to be fixed!!!!!!
+
+1.8.5
+ # Fixed destroyerTwo respawning behind playerOne's base
+ # Upped destroyer speed to 5 for quick testing
+ # Implemented circle damage for mines
+ # Implemented flashing indicator light for when a player is in the
+   activation range of a mine
+ # Bug: After starting the game, pressing the waypoint key without moving
+	causes the destroyer to charge to and pass the enemy base; continuing
+	forever offscreen. Quite humerous to watch with speed temporarily at 5
+ # Bug: In an attempt to curb mine location spamming, a 5 second timer was
+	implemented so that after destroying your own mine so that you may
+	put it in a new location; there is a waiting period before you may place
+	a fresh one. However, this is currently broken, and after one mine
+	self-destruct, you are not able to place any more mines.
+
+1.8.6
+ # Fixed players automatically shooting when they respawn, if they died while shooting
+ # Players can no longer place waypoints within their own base
+ # Ships with negative health will no longer appear white as if they had five health
+ # If a player has negative health, they will now be displayed to have 0 health
+ # Fixed a bug preventing the blue mine from flashing
+ # Base turrets are no longer drawn when their base is destroyed
+ # Destroyer turrets are no longer visible
+ # To differentiate destroyers while they are not moving, flames are now slightly visible
+
+1.8.7
+ # Fixed a bug where shots could collide with destroyers that are not alive
+ # Fixed playerTwo's health displaying in the wrong corner when equal to 0
+ # Waypoints are now immediately destroyed if their destroyer is killed
+ # Reformatted and FIXED destroyer respawn
+ # Destroyers now go down with a bang
+ # Introduction of death messages to the CLI
+
+1.8.8
+ # Death messages are no longer glitchy
+ # Added variables to count deaths for players, destroyers, and deployable turrets
+ # Fixed severe grammer and spelling issues in death messages
+ # Added a statistics output at the end of each game
+ # Players no longer shoot fast enough to solo kill a base
+
+ # Bug: Blue destroyer might shoot past the waypoint
+ # Bug: Red destroyer might vanish suddenly, while still able to shoot
+ # Bug: Mines are never re-deployable after the first one is used
+ # Bug: The game still needs a name!!! "Asteroids" does not even relate to the game!!!
+
+1.8.9
+ # Implemented cooldown for mines after self-destructing to combat spamming
+ # Fixed bugs regarding mine activation/detonation
+ # Fixed minor wrapping bug in Stars.java
+ # Waypoints are now a resaonable size
+
+Dinner's On You 1.0
+ # Implemented bill calculations
+ # Changed name: Dinner's on You
+
+Dinner's On You 1.1
+ # Bills are now fully functional
+ # Expenses for mines now correctly calculate
+ # Added a boolean to detect when the game is over
+ # Players no longer respawn when their base is destroyed
+
+ # Bug: If a player is holding down the shoot key when the game ends, and if they keep holding it down, they
+	keep shooting, even though the game is over. This adds to the total cost of ammunition.
+ # Bug: If player two loses, the red turrets keep shooting at the blue base, adding to the cost of ammo.
+ # Bug: Blue destroyer might shoot past the waypoint instead of stopping
+ # Bug: Red destroyer might vanish when it passes the waypoint instead of stopping

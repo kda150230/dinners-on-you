@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>Asteroids</label>
+		<id>22</id>
+		<version>0</version>
+	</settings>
+	<users>
+		<user>
+			<path>Asteroids2.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>Asteroids.jcp</path>
+		</project>
+	</projects>
+</workspace>

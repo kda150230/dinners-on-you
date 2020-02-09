@@ -1,0 +1,5 @@
+<center>
+<h1>Asteroids</h1>
+<br>
+<applet code="Asteroids.class" height = 720 width = 1230></applet>
+</center>
